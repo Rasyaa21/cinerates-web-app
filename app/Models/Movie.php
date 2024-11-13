@@ -10,7 +10,7 @@ class Movie extends Model
         'movie_name',
         'movie_desc',
         'release_date',
-        'movie_category_id',
+        'category_id',
         'like_count',
         'is_popular',
         'rating',
