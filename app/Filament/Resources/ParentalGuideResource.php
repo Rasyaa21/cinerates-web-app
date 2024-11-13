@@ -17,7 +17,7 @@ class ParentalGuideResource extends Resource
 {
     protected static ?string $model = ParentalGuide::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-tag';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
     {
