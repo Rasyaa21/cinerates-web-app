@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Watchlist extends Model
 {
     protected $fillable = [
-        'watchlist_id',
+        'movie_id',
         'user_id',
         'is_watched',
     ];
@@ -24,5 +24,15 @@ class Watchlist extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get all of the movie for the Watchlist
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function movie()
+    {
+        return $this->belongsTo(Movie::class);
     }
 }
