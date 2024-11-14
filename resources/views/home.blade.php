@@ -50,7 +50,7 @@
     <section class="flex justify-center my-24 mt-24" id="Home">
         <div class="container flex flex-col items-center md:flex-row md:justify-between">
             <div class="flex justify-center">
-                <img src="" class="w-[350px] md:w-[1200px] sm:w-[400px]">
+                <img src="\assets\img\image.png" class="w-[350px] md:w-[1200px] sm:w-[400px]">
             </div>
             <div class="px-12 text-center md:text-justify md:pl-0 sm:items-center sm:mx-10">
                 <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">CineRates</h1>
@@ -65,7 +65,7 @@
     <section class="flex flex-col items-center justify-center mt-72" id="what-we-offer">
 
         <div class="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(0,0,0,0)] w-11/12 sm:w-2/3 md:w-1/3 lg:w-1/5 h-16 bg-gradient-to-r from-[#311FB0] to-[#2F80ED] rounded-[20px] flex items-center justify-center ">
-            <p class="text-xl font-semibold text-white font-instrument-sans">What We Offer</p>
+            <p class="text-xl font-semibold text-white font-instrument-sans ">What We Offer</p>
         </div>
 
         <div class="flex flex-wrap items-center justify-around w-full px-12 mt-36">
@@ -104,7 +104,7 @@
         <div class="container flex flex-col items-center justify-around mx-48 md:flex-row md:justify-between mt-36">
 
             <div class="flex justify-center m-2 mb-6">
-                <img src="/src/img/tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[350px] md:w-[1100px] sm:w-[350px] rounded-[20px]">
+                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[350px] md:w-[1100px] sm:w-[350px] rounded-[20px]">
             </div>
             <div class="px-12 text-center md:text-justify md:pl-0 sm:items-center sm:mx-36">
                 <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">Deadpool & Wolverine</h1>
@@ -119,7 +119,7 @@
         <div class="container flex flex-col items-center justify-around mx-48 md:flex-row-reverse md:justify-between mt-36">
 
             <div class="flex justify-center m-2 mb-6">
-                <img src="/src/img/poster-6.jpeg" class="w-[350px] md:w-[1100px] sm:w-[350px] rounded-[20px]">
+                <img src="\assets\img\poster-6.jpeg" class="w-[350px] md:w-[1100px] sm:w-[350px] rounded-[20px]">
             </div>
 
             <div class="px-12 text-center md:text-justify md:pl-0 sm:items-center sm:mx-36">
@@ -141,19 +141,19 @@
         <div class="flex flex-wrap items-center justify-around w-full px-12 mt-36">
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-3.jpeg" class="rounded-[16px] mb-4"">
+                    <img src="\assets\img\poster-3.jpeg" class="rounded-[16px] mb-4"">
                     <a class="text-2xl font-semibold text-center">The Day After Tommorow</a>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-2.jpeg" class="rounded-[16px] mb-4">
+                    <img src="\assets\img\poster-2.jpeg" class="rounded-[16px] mb-4">
                     <a class="text-2xl font-semibold text-center">Perempuan Tanah Jahanam</a>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-1.jpeg" class="rounded-[16px] h-[350px] w-full mb-4">
+                    <img src="\assets\img\poster-1.jpeg" class="rounded-[16px] h-[350px] w-full mb-4">
                     <a class="text-2xl font-semibold text-center">Cek Toko Sebelah</a>
                 </div>
             </div>
@@ -161,19 +161,19 @@
         <div class="flex flex-wrap items-center justify-around w-full px-12 mt-36">
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-4.jpeg" class="rounded-[16px] mb-4"">
+                    <img src="\assets\img\poster-4.jpeg" class="rounded-[16px] mb-4"">
                     <a class="text-2xl font-semibold text-center">Pamali</a>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-5.jpeg" class="rounded-[16px] mb-4">
+                    <img src="\assets\img\poster-5.jpeg" class="rounded-[16px] mb-4">
                     <a class="text-2xl font-semibold text-center">Beetlejuice 2</a>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 rounded-[20px] flex justify-center mb-6">
                 <div class="flex flex-col text-white pl-7">
-                    <img src="/src/img/poster-6.jpeg" class="rounded-[16px] h-[350px] w-full mb-4">
+                    <img src="\assets\img\poster-6.jpeg" class="rounded-[16px] h-[350px] w-full mb-4">
                     <a class="text-2xl font-semibold text-center">Spiderman Homecoming</a>
                 </div>
             </div>
