@@ -59,6 +59,6 @@ class Movie extends Model
      */
     public function image()
     {
-        return $this->belongsTo(MovieImage::class);
+        return $this->hasMany(MovieImage::class);
     }
 }

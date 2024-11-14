@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\MovieResource\Pages;
 use App\Filament\Resources\MovieResource\RelationManagers;
 use App\Models\Movie;
+use App\Models\MovieImage;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -47,17 +48,20 @@ class MovieResource extends Resource
                     ->columnSpanFull(),
                 Forms\Components\Toggle::make('is_popular')
                     ->required(),
-                Forms\Components\FileUpload::make('movie_poster')
+                Forms\Components\Repeater::make('images')
+                    ->relationship('image')
+                    ->schema([
+                    Forms\Components\FileUpload::make('movie_poster')
+                        ->required(),
+                    Forms\Components\FileUpload::make('movie_trailer')
+                        ->required()
+                        ->maxSize(102400)
+                        ->helperText('Max file size is 100 MB.'),
+                    Forms\Components\FileUpload::make('image')
+                        ->required()
+                    ])
                     ->columnSpanFull()
-                    ->required(),
-                Forms\Components\FileUpload::make('movie_trailer')
                     ->required()
-                    ->columnSpanFull()
-                    ->maxSize(102400)
-                    ->helperText('Max file size is 100 MB.'),
-                Forms\Components\FileUpload::make('image')
-                    ->required()
-                    ->columnSpanFull(),
             ]);
     }
 
@@ -65,10 +69,27 @@ class MovieResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('movie_name')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('image.movie_poster')
+                    ->label('movie_poster'),
+                Tables\Columns\TextColumn::make('category.category')
+                    ->label('Category'),
+                Tables\Columns\TextColumn::make('rating'),
+                Tables\Columns\ToggleColumn::make('is_popular'),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('category.category')
+                    ->relationship('category', 'category')
+                    ->multiple()
+                    ->label('Category'),
+                Tables\Filters\SelectFilter::make('is_popular')
+                    ->options([
+                        true => 'Popular',
+                        false => 'Tidak Popular'
+                    ])
+                    ->label('Is Popular'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
