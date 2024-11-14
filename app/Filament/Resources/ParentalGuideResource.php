@@ -36,14 +36,18 @@ class ParentalGuideResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make("pg_name"),
+                Tables\Columns\TextColumn::make("pg_name")
+                    ->searchable(),
                 Tables\Columns\TextColumn::make("pg_rate")
+                    ->sortable()
             ])
             ->filters([
-                //
+
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

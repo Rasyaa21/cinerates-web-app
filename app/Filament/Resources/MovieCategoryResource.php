@@ -39,7 +39,9 @@ class MovieCategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make("category"),
+                Tables\Columns\TextColumn::make("category")
+                    ->sortable()
+                    ->searchable(),
                 Tables\Columns\TextColumn::make("category_desc"),
                 Tables\Columns\TextColumn::make("sort_order"),
             ])

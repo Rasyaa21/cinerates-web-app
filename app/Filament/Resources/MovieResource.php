@@ -75,8 +75,10 @@ class MovieResource extends Resource
                 Tables\Columns\ImageColumn::make('image.movie_poster')
                     ->label('movie_poster'),
                 Tables\Columns\TextColumn::make('category.category')
+                    ->sortable()
                     ->label('Category'),
-                Tables\Columns\TextColumn::make('rating'),
+                Tables\Columns\TextColumn::make('rating')
+                    ->sortable(),
                 Tables\Columns\ToggleColumn::make('is_popular'),
             ])
             ->filters([
