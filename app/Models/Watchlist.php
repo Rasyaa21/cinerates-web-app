@@ -33,6 +33,6 @@ class Watchlist extends Model
      */
     public function movie()
     {
-        return $this->belongsTo(Movie::class);
+        return $this->belongsto(Movie::class);
     }
 }
