@@ -25,4 +25,9 @@ class MovieRepository implements MovieRepositoryInterface{
     {
 
     }
+
+    public function addLikedMovie($id)
+    {
+
+    }
 }
