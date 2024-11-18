@@ -45,7 +45,10 @@ class MovieResource extends Resource
                     ->hint('minute'),
                 Forms\Components\Select::make('parental_guide_id')
                     ->relationship('parentalGuide', 'pg_name')
-                    ->columnSpanFull(),
+                    ->required(),
+                Forms\Components\Select::make('director_id')
+                    ->relationship('director', 'name')
+                    ->required(),
                 Forms\Components\Toggle::make('is_popular')
                     ->required(),
                 Forms\Components\Repeater::make('images')
@@ -69,11 +72,12 @@ class MovieResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('image.movie_poster')
+                    ->label('movie_poster'),
                 Tables\Columns\TextColumn::make('movie_name')
                     ->sortable()
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image.movie_poster')
-                    ->label('movie_poster'),
+                Tables\Columns\TextColumn::make('director.name'),
                 Tables\Columns\TextColumn::make('category.category')
                     ->sortable()
                     ->label('Category'),

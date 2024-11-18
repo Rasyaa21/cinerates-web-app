@@ -15,7 +15,8 @@ class Movie extends Model
         'is_popular',
         'rating',
         'screen_time',
-        'parental_guide_id'
+        'parental_guide_id',
+        'director_id'
     ];
 
     protected $casts = [
