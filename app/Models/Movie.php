@@ -61,4 +61,14 @@ class Movie extends Model
     {
         return $this->hasMany(MovieImage::class);
     }
+
+    /**
+     * Get the director that owns the Movie
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function director()
+    {
+        return $this->belongsTo(Director::class);
+    }
 }

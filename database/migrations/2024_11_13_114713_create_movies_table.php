@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('movie_desc');
             $table->date('release_date');
             $table->foreignId('category_id')->constrained('movie_categories')->onDelete('cascade');
+            $table->foreignId('director_id')->constrained('directors')->onDelete('cascade');
             $table->integer('like_count');
             $table->boolean('is_popular');
             $table->double('rating');
