@@ -38,10 +38,11 @@ class Movie extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function category()
+    public function categories()
     {
-        return $this->belongsTo(MovieCategory::class);
+        return $this->belongsToMany(MovieCategory::class);
     }
+
 
     /**
      * Get all of the watchlis Movie

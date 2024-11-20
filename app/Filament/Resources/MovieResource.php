@@ -33,8 +33,13 @@ class MovieResource extends Resource
                 Forms\Components\DatePicker::make('release_date')
                     ->required()
                     ->columnSpanFull(),
-                Forms\Components\Select::make('category_id')
-                    ->relationship('category', 'category')
+                Forms\Components\Repeater::make('categories')
+                    ->relationship('categories')
+                    ->schema([
+                        Forms\Components\Select::make('category_id')
+                            ->relationship('categories', 'category')
+                            ->required(),
+                    ])
                     ->required(),
                 Forms\Components\TextInput::make('like_count')
                     ->required(),
@@ -54,17 +59,18 @@ class MovieResource extends Resource
                 Forms\Components\Repeater::make('images')
                     ->relationship('image')
                     ->schema([
-                    Forms\Components\FileUpload::make('movie_poster')
+                Forms\Components\FileUpload::make('movie_poster')
                         ->required(),
-                    Forms\Components\FileUpload::make('movie_trailer')
+                Forms\Components\FileUpload::make('movie_trailer')
                         ->required()
                         ->maxSize(102400)
                         ->helperText('Max file size is 100 MB.'),
-                    Forms\Components\FileUpload::make('image')
+                Forms\Components\FileUpload::make('image')
                         ->required()
                     ])
                     ->columnSpanFull()
                     ->required()
+
             ]);
     }
 
@@ -78,7 +84,7 @@ class MovieResource extends Resource
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('director.name'),
-                Tables\Columns\TextColumn::make('category.category')
+                Tables\Columns\TextColumn::make('categories.category')
                     ->sortable()
                     ->label('Category'),
                 Tables\Columns\TextColumn::make('rating')
@@ -86,8 +92,8 @@ class MovieResource extends Resource
                 Tables\Columns\ToggleColumn::make('is_popular'),
             ])
             ->filters([
-                Tables\Filters\SelectFilter::make('category.category')
-                    ->relationship('category', 'category')
+                Tables\Filters\SelectFilter::make('categories.category')
+                    ->relationship('categories', 'category')
                     ->multiple()
                     ->label('Category'),
                 Tables\Filters\SelectFilter::make('is_popular')
