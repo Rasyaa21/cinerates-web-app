@@ -17,7 +17,7 @@
         <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">CineRates</h1>
         <h1 class="text-4xl font-instrument-sans text-white">Login To Cinerates</h1>
         <p class="text-xl text-white font-instrument-sans mt-3">Your Best Film Review</p>
-        <form>
+        <form class="justify-center items-center">
             <div class="pt-10">
                 <label for="Email" class="text-white font-instrument-sans">Email </label> <br>
                 <input type="text" name="Email" id="Email">
@@ -25,6 +25,9 @@
             <div class="pt-10">
                 <label for="Password" class="text-white font-instrument-sans">Password </label> <br>
                 <input type="password" name="password" id="password">
+            </div>
+            <div class="justify-center items-center mt-10">
+                <button type="submit"  class="text-white bg-[#19ABE0] pl-[30px] pr-[30px] pt-[15px] pb-[15px] rounded-md">Log In</button>
             </div>
         </form>
     </div>
