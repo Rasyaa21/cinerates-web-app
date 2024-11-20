@@ -182,7 +182,7 @@
     </main>
     <footer>
         <section class="flex flex-col justify-around items-center font-instrument-sans bg-gradient-to-t from-[#432BF2]/90 from-0% to-[#000000]/15 from-78%">
-            <div>
+            <div class="mt-24">
                 <h3 class="text-3xl font-semibold text-white font-instrument-sans">CineRates</h3>
             </div>
             <div class="text-white font-instrument-sans justify-around w-[400px] flex flex-wrap items-center mt-12">
@@ -216,6 +216,6 @@
             </div>
         </section>
     </footer>
-    <script src="app.js"></script>
+    <script src="\javascript\app.js"></script>
 </body>
 </html>
