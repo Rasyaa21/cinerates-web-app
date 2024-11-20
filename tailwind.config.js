@@ -23,7 +23,7 @@ export default {
             },
         
           fontFamily : {
-            'instrument-sans' : ['Instrument Sans']
+            'instrument-sans' : ['Instrument Sans', 'sans-serif']
           },
       
           keyframes: {
