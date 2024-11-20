@@ -17,7 +17,7 @@ class MovieCategory extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function movie()
+    public function movies()
     {
         return $this->hasMany(Movie::class);
     }

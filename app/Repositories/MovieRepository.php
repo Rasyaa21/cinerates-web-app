@@ -7,35 +7,52 @@ use App\Models\Movie;
 use App\Models\Watchlist;
 use Illuminate\Support\Facades\Auth;
 
-class MovieRepository implements MovieRepositoryInterface{
+class MovieRepository implements MovieRepositoryInterface
+{
     public function getAllMovie()
     {
-        return Movie::with(['image.movie_poster'])->get();
+        return Movie::with('image.movie_poster')->get();
     }
 
     public function getMovieByGenre($category)
     {
-        return Movie::where('category_id', $category)->with(['image.movie_poster'])->get();
+        return Movie::where('category_id', $category)->with('image.movie_poster')->get();
     }
 
     public function getPopularMovie()
     {
-        return Movie::where('is_popular', true)->with(['image.movie_poster'])->get();
+        return Movie::where('is_popular', true)->with('image.movie_poster')->get();
     }
 
-    public function getWatchlistMovie()
+    public function getWatchlistMovie($user_id)
     {
-        $user_id = Auth::user()->id;
-        return Watchlist::where('user_id', $user_id)->with(['image.movie_poster'])->get();
+        return Watchlist::where('user_id', $user_id)->with('movie.image.movie_poster')->get();
     }
 
     public function addLikedMovie($id)
     {
-        $movie = Movie::where('id', $id)->get();
-        return $movie->increment('like_count');
+        $movie = Movie::find($id);
+        if ($movie) {
+            $movie->increment('like_count');
+            return $movie;
+        }
+        return ['error' => 'Movie not found'];
     }
 
-    public function addMovieToWatchlist($id){
-
+    public function addMovieToWatchlist($user_id, $movie_id)
+    {
+        if (Watchlist::where('user_id', $user_id)->where('movie_id', $movie_id)->exists()) {
+            return ['error' => 'Movie already exists in watchlist'];
+        }
+        try {
+            return Watchlist::create([
+                'movie_id' => $movie_id,
+                'user_id' => $user_id,
+                'is_watched' => false
+            ]);
+        } catch (\Exception $e) {
+            return ['error' => $e->getMessage()];
+        }
     }
 }
+
