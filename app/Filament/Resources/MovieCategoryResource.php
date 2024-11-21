@@ -43,7 +43,8 @@ class MovieCategoryResource extends Resource
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make("category_desc"),
-                Tables\Columns\TextColumn::make("sort_order"),
+                Tables\Columns\TextColumn::make("sort_order")
+                    ->numeric(),
             ])
             ->filters([
 
