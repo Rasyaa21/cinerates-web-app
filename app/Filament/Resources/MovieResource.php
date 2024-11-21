@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\MovieResource\Pages;
 use App\Filament\Resources\MovieResource\RelationManagers;
 use App\Models\Movie;
+use App\Models\MovieCategory;
 use App\Models\MovieImage;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -33,14 +34,16 @@ class MovieResource extends Resource
                 Forms\Components\DatePicker::make('release_date')
                     ->required()
                     ->columnSpanFull(),
-                Forms\Components\Repeater::make('categories')
+                    Forms\Components\Repeater::make('categories')
                     ->relationship('categories')
                     ->schema([
-                        Forms\Components\Select::make('category_id')
-                            ->relationship('categories', 'category')
+                        Forms\Components\Select::make('id')
+                            ->options(MovieCategory::pluck('category', 'id'))
+                            ->label('Category')
                             ->required(),
                     ])
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('like_count')
                     ->required(),
                 Forms\Components\TextInput::make('rating')
@@ -55,7 +58,8 @@ class MovieResource extends Resource
                     ->relationship('director', 'name')
                     ->required(),
                 Forms\Components\Toggle::make('is_popular')
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull(),
                 Forms\Components\Repeater::make('images')
                     ->relationship('image')
                     ->schema([
@@ -85,8 +89,10 @@ class MovieResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('director.name'),
                 Tables\Columns\TextColumn::make('categories.category')
-                    ->sortable()
-                    ->label('Category'),
+                    ->label('Categories')
+                    ->formatStateUsing(function ($state){
+                        return $state->pluck('Category')->join(', ');
+                    }),
                 Tables\Columns\TextColumn::make('rating')
                     ->sortable(),
                 Tables\Columns\ToggleColumn::make('is_popular'),
