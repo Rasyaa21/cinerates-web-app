@@ -40,7 +40,7 @@ class Movie extends Model
      */
     public function categories()
     {
-        return $this->belongsToMany(MovieCategory::class);
+        return $this->belongsToMany(MovieCategory::class, 'category_movie', 'movie_id', 'category_id');
     }
 
 
@@ -51,7 +51,7 @@ class Movie extends Model
      */
     public function watchlist()
     {
-        return $this->hasMany(Watchlist::class);
+        return $this->belongsToMany(Watchlist::class);
     }
 
     /**
