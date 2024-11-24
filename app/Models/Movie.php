@@ -44,8 +44,6 @@ class Movie extends Model
             ->withTimestamps();
     }
 
-
-
     /**
      * Get all of the watchlis Movie
      *
