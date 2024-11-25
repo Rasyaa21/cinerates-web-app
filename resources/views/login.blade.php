@@ -13,20 +13,20 @@
             <img src="\assets\img\poster-5.jpeg" class="max-w-full rounded-[16px] w-[2500px]">
         </div>
     </div>
-    <div class="justify-center items-center flex flex-col font-instrument-sans mt-12">
+    <div class="flex flex-col items-center justify-center mt-12 font-instrument-sans">
         <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">CineRates</h1>
-        <h1 class="text-4xl font-instrument-sans text-white">Login To Cinerates</h1>
-        <p class="text-xl text-white font-instrument-sans mt-3">Your Best Film Review</p>
-        <form class="justify-center items-center">
+        <h1 class="text-4xl text-white font-instrument-sans">Login To Cinerates</h1>
+        <p class="mt-3 text-xl text-white font-instrument-sans">Your Best Film Review</p>
+        <form class="items-center justify-center">
             <div class="pt-10">
                 <label for="Email" class="text-white font-instrument-sans">Email </label> <br>
                 <input type="text" name="Email" id="Email">
             </div>
             <div class="pt-10">
-                <label for="Password" class="text-white font-instrument-sans">Password </label> <br>
+                <label for="Password" class="text-white font-instrument-sans">Password</label> <br>
                 <input type="password" name="password" id="password">
             </div>
-            <div class="justify-center items-center mt-10">
+            <div class="items-center justify-center mt-10">
                 <button type="submit"  class="text-white bg-[#19ABE0] pl-[30px] pr-[30px] pt-[15px] pb-[15px] rounded-md">Log In</button>
             </div>
         </form>
