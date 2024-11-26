@@ -9,7 +9,7 @@ use App\Models\Watchlist;
 class WatchlistRepository implements WatchlistRepositoryInterface{
     public function addToWatchlist($movie_id)
     {
-
+        
     }
 
     public function removeFromWatchlist($movie_id)
