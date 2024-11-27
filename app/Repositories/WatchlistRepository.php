@@ -7,7 +7,7 @@ use App\Models\Movie;
 use App\Models\Watchlist;
 
 class WatchlistRepository implements WatchlistRepositoryInterface{
-    public function addToWatchlist($movie_id, $user_id): Watchlist
+    public function addToWatchlist($movie_id, $user_id)
     {
         $movie = Movie::where('id', $movie_id)->first();
         if (!$movie) {
