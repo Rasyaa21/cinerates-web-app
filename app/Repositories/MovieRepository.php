@@ -5,6 +5,7 @@ namespace App\Repositories;
 use App\Interfaces\MovieRepositoryInterface;
 use App\Models\Movie;
 use App\Models\Watchlist;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Auth;
 
 class MovieRepository implements MovieRepositoryInterface
@@ -31,12 +32,13 @@ class MovieRepository implements MovieRepositoryInterface
 
     public function addLikedMovie($id)
     {
-        $movie = Movie::find($id);
-        if ($movie) {
+        try {
+            $movie = Movie::findOrFail($id);
             $movie->increment('like_count');
             return $movie;
+        } catch (ModelNotFoundException $e) {
+            return ['error' => 'Movie not found'];
         }
-        return ['error' => 'Movie not found'];
     }
 
     public function addMovieToWatchlist($user_id, $movie_id)
