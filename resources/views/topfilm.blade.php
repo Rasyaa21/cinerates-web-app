@@ -56,7 +56,7 @@ $movies = \App\Models\Movie::all();
         @foreach ($movies as $movie)
         <div class="inline-grid mt-10 lg:gap-20 md:gap-24 sm:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             <div class="flex flex-col">
-                <img src="{{ asset('storage/' . $movie->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
+                <img src="{{ asset('storage/' . $movie->image->first()->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
                 <p class="text-xl font-bold text-white font-instrument-sans">{{ $movie->movie_name }}</p>
                 <div class="flex flex-wrap">
                     @foreach ($movie->categories as $category)
