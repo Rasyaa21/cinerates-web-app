@@ -59,7 +59,7 @@ class Movie extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function image()
+    public function images()
     {
         return $this->hasMany(MovieImage::class);
     }

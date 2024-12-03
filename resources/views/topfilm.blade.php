@@ -1,7 +1,3 @@
-@php
-$movies = \App\Models\Movie::all();
-@endphp
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,24 +49,32 @@ $movies = \App\Models\Movie::all();
             <p class="text-xl font-semibold text-white font-instrument-sans">Trending Movies</p>
         </div>
 
-        @foreach ($movies as $movie)
         <div class="inline-grid mt-10 lg:gap-20 md:gap-24 sm:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-            <div class="flex flex-col">
-                <img src="{{ asset('storage/' . $movie->image->first()->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="text-xl font-bold text-white font-instrument-sans">{{ $movie->movie_name }}</p>
-                <div class="flex flex-wrap">
-                    @foreach ($movie->categories as $category)
-                        <p class="mr-2 text-white font-instrument-sans sm:text-sm md:text-xl">{{ $category->category }}</p>
-                    @endforeach
+            @foreach ($popularMovies as $movie)
+                @php
+                    $hours = intdiv($movie->screen_time, 60);
+                    $minutes = $movie->screen_time % 60;
+                @endphp
+                <div class="flex flex-col">
+                    <img src="{{ asset('storage/' . $movie->images->first()->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
+                    <p class="text-xl font-bold text-white font-instrument-sans">{{ $movie->movie_name }}</p>
+                    <div class="flex flex-wrap">
+                        @foreach ($movie->categories as $category)
+                            <p class="mr-2 text-white font-instrument-sans sm:text-sm md:text-xl">{{ $category->category }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex items-center">
+                        <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">
+                            {{ $hours }} h {{ $minutes }} m
+                        </p>
+                        <img src="{{ asset('assets/img/bintang.png') }}" class="md:w-[30px] sm:w-[20px]">
+                        <p class="text-xl font-bold text-white font-instrument-sans sm:text-sm md:text-xl">{{ $movie->rating }}</p>
+                    </div>
                 </div>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">{{ $movie->screen_time }}</p>
-                    <img src="{{ asset('assets/img/bintang.png') }}" class="md:w-[30px] sm:w-[20px]">
-                    <p class="text-xl font-bold text-white font-instrument-sans sm:text-sm md:text-xl">{{ $movie->rating }}</p>
-                </div>
-            </div>
-        @endforeach
+            @endforeach
         </div>
+
+
     </section>
 </body>
 </html>
