@@ -34,8 +34,8 @@ class MovieController extends Controller
     }
 
     public function getPopularMovie(){
-        $movies = $this->movieRepository->getPopularMovie();
-        return view('topfilm', compact('movies'));
+        $popularMovies = $this->movieRepository->getPopularMovie();
+        return view('topfilm', compact('popularMovies'));
     }
 
     public function addLikedMovie($movie_id){

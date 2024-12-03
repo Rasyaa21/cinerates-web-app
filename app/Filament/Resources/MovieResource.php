@@ -61,7 +61,7 @@ class MovieResource extends Resource
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\Repeater::make('images')
-                    ->relationship('image')
+                    ->relationship('images')
                     ->schema([
                 Forms\Components\FileUpload::make('movie_poster')
                         ->required(),
@@ -82,7 +82,7 @@ class MovieResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image.movie_poster')
+                Tables\Columns\ImageColumn::make('images.movie_poster')
                     ->label('movie_poster'),
                 Tables\Columns\TextColumn::make('movie_name')
                     ->sortable()
