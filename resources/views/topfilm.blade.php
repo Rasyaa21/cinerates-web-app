@@ -50,74 +50,64 @@
         </div>
 
 
-        <div class="inline-grid lg:gap-20 md:gap-24 sm:gap-20 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div class="inline-grid lg:gap-20 md:gap-24 gap-20 mt-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
             <div class="flex flex-col">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white">Dedpol</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex">
-                    <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] sm:w-[20px]">
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
