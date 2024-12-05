@@ -18,24 +18,24 @@ class MovieController extends Controller
     public function getAllMovie()
     {
         $movies = $this->movieRepository->getAllMovie();
-        return view('movies', compact('movies'));
+        return view('topfilm', compact('movies'));
     }
 
     public function getMovieByGenre($category)
     {
         $movies = $this->movieRepository->getMovieByGenre($category);
-        return view('movies', compact('movies'));
+        return view('topfilm', compact('movies'));
     }
 
     public function getWatchlistMovie(){
         $user_id = Auth::id();
         $movies = $this->movieRepository->getWatchlistMovie($user_id);
-        return view('movies', compact('movies'));
+        return view('topfilm', compact('movies'));
     }
 
     public function getPopularMovie(){
-        $movies = $this->movieRepository->getPopularMovie();
-        return view('movies', compact('movies'));
+        $popularMovies = $this->movieRepository->getPopularMovie();
+        return view('topfilm', compact('popularMovies'));
     }
 
     public function addLikedMovie($movie_id){

@@ -57,7 +57,7 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
@@ -107,11 +107,37 @@
                 <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
                 <div class="flex items-center pt-3">
                     <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[30px] md:h-[30px] w-[20px] h-[20px]">
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
                     <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
                 </div>
             </div>
+        <div class="inline-grid mt-10 lg:gap-20 md:gap-24 sm:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+            @foreach ($popularMovies as $movie)
+                @php
+                    $hours = intdiv($movie->screen_time, 60);
+                    $minutes = $movie->screen_time % 60;
+                @endphp
+                <div class="flex flex-col">
+                    <img src="{{ asset('storage/' . $movie->images->first()->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
+                    <p class="text-xl font-bold text-white font-instrument-sans">{{ $movie->movie_name }}</p>
+                    <div class="flex flex-wrap">
+                        @foreach ($movie->categories as $category)
+                            <p class="mr-2 text-white font-instrument-sans sm:text-sm md:text-xl">{{ $category->category }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex items-center">
+                        <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">
+                            {{ $hours }} h {{ $minutes }} m
+                        </p>
+                        <img src="{{ asset('assets/img/bintang.png') }}" class="md:w-[30px] sm:w-[20px]">
+                        <p class="text-xl font-bold text-white font-instrument-sans sm:text-sm md:text-xl">{{ $movie->rating }}</p>
+                    </div>
+                </div>
+            @endforeach
         </div>
+
+
     </section>
 </body>
 </html>
+

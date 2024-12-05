@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Interfaces\MovieRepositoryInterface;
 use App\Models\Movie;
+use App\Models\MovieImage;
 use App\Models\Watchlist;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Auth;
@@ -17,17 +18,17 @@ class MovieRepository implements MovieRepositoryInterface
 
     public function getMovieByGenre($category)
     {
-        return Movie::where('category_id', $category)->with('image.movie_poster')->get();
+        return Movie::where('category_id', $category)->with('images')->get();
     }
 
     public function getPopularMovie()
     {
-        return Movie::where('is_popular', true)->with('image.movie_poster')->get();
+        return Movie::where('is_popular', true)->with('images')->get();
     }
 
     public function getWatchlistMovie($user_id)
     {
-        return Watchlist::where('user_id', $user_id)->with('movie.image.movie_poster')->get();
+        return Watchlist::where('user_id', $user_id)->with('movie.images')->get();
     }
 
     public function addLikedMovie($id)
