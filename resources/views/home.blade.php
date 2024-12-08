@@ -102,7 +102,6 @@
         </div>
 
         <div class="container flex flex-col items-center justify-around mx-48 md:flex-row md:justify-between mt-36">
-
             <div class="flex justify-center m-2 mb-6">
                 <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[350px] md:w-[1100px] sm:w-[350px] rounded-[20px]">
             </div>
