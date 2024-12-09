@@ -8,11 +8,11 @@
 </head>
 <body class="bg-bg-main">
     <section class="flex justify-center my-24 mt-24" id="Home">
-        <div class="container flex flex-col items-center md:flex-row md:justify-between">
+        <div class="container flex flex-col items-center md:flex-row md:justify-center gap-10 md:gap-96">
             <div class="flex justify-center">
-                <img src="\assets\img\poster-5.jpeg" class=" rounded-[16px] max-w-full">
+                <img src="\assets\img\poster-5.jpeg" class=" rounded-[16px] w-[450px]">
             </div>
-            <div class="text-center justify-center md:text-justify md:pl-0 sm:items-center sm:mx-10">
+            <div class="items-center text-center">
                 <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">CineRates</h1>
                 <h1 class="text-4xl text-white font-instrument-sans">Login To Cinerates</h1>
                 <p class="mt-3 text-xl text-white font-instrument-sans">Your Best Film Review</p>
