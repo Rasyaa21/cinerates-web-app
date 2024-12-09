@@ -23,16 +23,16 @@
 
                 <ul id="menu" class="absolute left-0 z-10 hidden w-full transition-all duration-100 ease-in-out transform bg-blue-800 opacity-0 md:flex md:items-center md:static md:bg-transparent md:w-auto top-20 md:top-0 md:opacity-100 md:translate-y-0">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="#Home" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Home</a>
+                        <a href="{{route('topfilm')}}" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Home</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="#what-we-offer" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Feature</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="#trending" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Trending</a>
+                        <a href="{{route('topfilm')}}" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Trending</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="#black-box-movies" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Box Office</a>
+                        <a href="{{route('boxoffice')}}" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Box Office</a>
                     </li>
                     <li class="my-6 md:my-0">
                         <button class="text-l bg-gradient-to-r from-[#1393ee] to-[#311fb0] mx-4 font-instrument-sans text-white font-semibold duration-500 px-6 py-2 hover:bg-cyan-500 rounded">
@@ -51,91 +51,27 @@
 
 
         <div class="inline-grid lg:gap-20 md:gap-24 gap-20 mt-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <img src="\assets\img\tayang_tidalwave_fight_localized_742x1100_da1d8b60.jpeg" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                <p class="font-instrument-sans text-xl font-bold text-white pt-3">Dedpollll</p>               
-                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">Mafia | Laga | Gangster</p>
-                <div class="flex items-center pt-3">
-                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">2j 30m</p>
-                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
-                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">4.75/5</p>
-                </div>
-            </div>
-        <div class="inline-grid mt-10 lg:gap-20 md:gap-24 sm:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             @foreach ($popularMovies as $movie)
-                @php
-                    $hours = intdiv($movie->screen_time, 60);
-                    $minutes = $movie->screen_time % 60;
-                @endphp
-                <div class="flex flex-col">
-                    <img src="{{ asset('storage/' . $movie->images->first()->movie_poster) }}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
-                    <p class="text-xl font-bold text-white font-instrument-sans">{{ $movie->movie_name }}</p>
-                    <div class="flex flex-wrap">
-                        @foreach ($movie->categories as $category)
-                            <p class="mr-2 text-white font-instrument-sans sm:text-sm md:text-xl">{{ $category->category }}</p>
-                        @endforeach
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-instrument-sans text-white lg:mr-[140px] md:mr-[100px] sm:w-[80px] sm:text-sm md:text-xl">
-                            {{ $hours }} h {{ $minutes }} m
-                        </p>
-                        <img src="{{ asset('assets/img/bintang.png') }}" class="md:w-[30px] sm:w-[20px]">
-                        <p class="text-xl font-bold text-white font-instrument-sans sm:text-sm md:text-xl">{{ $movie->rating }}</p>
-                    </div>
+            @php
+                $hours = intdiv($movie->screen_time, 60);
+                $minutes = $movie->screen_time % 60;
+            @endphp
+            <div class="flex flex-col">
+               
+                <img src="{{asset('storage/' . $movie->images->first()->movie_poster)}}" class="w-[150px] lg:w-[300px] md:w-[250px] rounded-[20px]">
+                <p class="font-instrument-sans text-xl font-bold text-white pt-3">{{$movie->movie_name}}</p>       
+                @foreach ($movie->categories as $category)
+                <p class="font-instrument-sans text-white sm:text-sm md:text-xl">{{$category->category }}</p>
+                @endforeach
+                <div class="flex items-center pt-3">
+                    <p class="font-instrument-sans text-white lg:mr-[130px] md:mr-[90px] mr-[30px] sm:w-[80px] sm:text-sm md:text-xl">{{$hours}} h {{$minutes}} m</p>
+                    <img src="\assets\img\bintang.png" class="md:w-[25px] md:h-[25px] w-[20px] h-[20px]">
+                    <p class="font-instrument-sans text-xl font-bold text-white sm:text-sm md:text-xl">{{$movie->rating}}</p>
                 </div>
-            @endforeach
+            </div>
+             @endforeach
         </div>
-
+            
 
     </section>
 </body>
