@@ -29,10 +29,10 @@
                         <a href="#what-we-offer" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Feature</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="#trending" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Trending</a>
+                        <a href="{{route('topfilm')}}" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Trending</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="#black-box-movies" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Box Office</a>
+                        <a href="{{route('boxoffice')}}" class="text-xl font-semibold text-white duration-500 font-instrument-sans hover:text-blue-400">Box Office</a>
                     </li>
                     <li class="my-6 md:my-0">
                         <button class="text-l bg-gradient-to-r from-[#1393ee] to-[#311fb0] mx-4 font-instrument-sans text-white font-semibold duration-500 px-6 py-2 hover:bg-cyan-500 rounded">

@@ -16,10 +16,10 @@
                 <h1 class="mb-8 text-6xl font-bold text-white font-instrument-sans">CineRates</h1>
                 <h1 class="text-4xl text-white font-instrument-sans">Login To Cinerates</h1>
                 <p class="mt-3 text-xl text-white font-instrument-sans">Your Best Film Review</p>
-                <form class="">
+                <form class="" id="loginform">
                     <div class="pt-10">
-                        <label for="Email" class="text-white font-instrument-sans" class="pb-10">Email </label> <br>
-                        <input type="text" name="Email" id="Email" class="px-10 py-2 rounded-xl">
+                        <label for="Email" class="text-white font-instrument-sans" class="pb-10">Username</label> <br>
+                        <input type="text" name="Email" id="username" class="px-10 py-2 rounded-xl">
                     </div>
                     <div class="pt-10">
                         <label for="Password" class="text-white font-instrument-sans">Password</label> <br>
@@ -33,6 +33,7 @@
             </div>
         </div>
     </section>
+    <script src="javascript/login.js"></script>
 </body>
 </html>
 </html>
